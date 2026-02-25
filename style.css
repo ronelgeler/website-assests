@@ -4594,3 +4594,25 @@ textarea {
 .form-field-label.not-required::after {
   content: ""; 
 }
+/* =========================================
+   Responsive Scaling For Laptops
+   מסדר את הבעיה שהאתר נראה "בזום" על מחשבים ניידים
+   ========================================= */
+
+@media screen and (max-width: 1500px) {
+  html { 
+    font-size: 90%; /* מקטין את כל האתר ב-10% למסכים בינוניים */
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html { 
+    font-size: 80%; /* מקטין את כל האתר ב-20% למסכי לפטופ קטנים יותר */
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html { 
+    font-size: 100%; /* מחזיר לגודל רגיל במובייל ובטאבלט, שם יש לך כבר התאמות אחרות */
+  }
+}
