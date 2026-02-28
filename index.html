@@ -300,20 +300,47 @@ formIds.forEach(id => {
 <script src="https://cdn.userway.org/widget.js" data-account="iaCLqsaGRU"></script>
 
 <style>
-/* Fix text overlap with the absolute positioned circle on the right for onboarding steps */
+/* Fix text overlap and perfect circular alignment for the onboarding numbers */
 .blue-list-block.onboarding {
-  padding-right: 4rem !important; 
+  padding-right: 4.5rem !important; 
+  padding-left: 2rem !important;
+  min-height: 4.5rem;
 }
 
-/* Cascading block styles for the 3 green bullet points */
-.cascading-block-1 { width: 100%; max-width: 80%; justify-content: flex-start; }
-.cascading-block-2 { width: 100%; max-width: 90%; justify-content: flex-start; }
-.cascading-block-3 { width: 100%; max-width: 100%; justify-content: flex-start; }
+.onboarding-number {
+  background-color: #ffffff !important;
+  color: var(--brand-green) !important;
+  border-radius: 50% !important;
+  width: 4rem !important;
+  height: 4rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translate(50%, -50%) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  border: none !important;
+}
+
+/* Fix cascading blocks text alignment and size */
+.cascading-block-1 { width: 100%; max-width: 80%; justify-content: center !important; }
+.cascading-block-2 { width: 100%; max-width: 90%; justify-content: center !important; }
+.cascading-block-3 { width: 100%; max-width: 100%; justify-content: center !important; }
+
+.cascading-block-1, .cascading-block-2, .cascading-block-3 {
+  font-size: 1.5rem !important;
+  padding: 1.25rem 2rem !important;
+  text-align: center !important;
+}
 
 /* SVG Icon styles */
 .check-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px !important;
+  height: 28px !important;
   margin-left: 14px;
   flex-shrink: 0;
 }
@@ -325,10 +352,24 @@ formIds.forEach(id => {
   flex-shrink: 0;
 }
 
-/* Make cascading blocks full width on smaller screens so they don't break */
+/* Mobile adjustments */
 @media (max-width: 767px) {
   .cascading-block-1, .cascading-block-2, .cascading-block-3 {
-    max-width: 100%;
+    max-width: 100% !important;
+    font-size: 1.2rem !important;
+    padding: 1rem !important;
+  }
+  .blue-list-block.onboarding {
+    padding-right: 3.5rem !important;
+  }
+  .onboarding-number {
+    width: 3.2rem !important;
+    height: 3.2rem !important;
+    font-size: 1.5rem !important;
+  }
+  .check-icon {
+    width: 22px !important;
+    height: 22px !important;
   }
 }
 </style>
