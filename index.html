@@ -164,7 +164,7 @@
             <div>מוכן להשקיע כדי להרוויח שקט נפשי ושליטה בעסק</div>
           </div>
         </div>
-        <h3>אז זה בדיוק בשבילך!</h3>
+        <h3 style="text-align: center; margin-top: 2rem; margin-bottom: 0;">אז זה בדיוק בשבילך!</h3>
       </div>
     </div>
     <a href="#Cta" class="blue-round-button w-inline-block" style="text-decoration: none; margin-top: 2rem;">
@@ -327,9 +327,9 @@ formIds.forEach(id => {
 }
 
 /* Fix cascading blocks text alignment and size */
-.cascading-block-1 { width: 100%; max-width: 80%; justify-content: center !important; }
-.cascading-block-2 { width: 100%; max-width: 90%; justify-content: center !important; }
-.cascading-block-3 { width: 100%; max-width: 100%; justify-content: center !important; }
+.cascading-block-1 { width: 70% !important; max-width: none !important; margin: 0 auto !important; justify-content: center !important; }
+.cascading-block-2 { width: 85% !important; max-width: none !important; margin: 0 auto !important; justify-content: center !important; }
+.cascading-block-3 { width: 100% !important; max-width: none !important; margin: 0 auto !important; justify-content: center !important; }
 
 .cascading-block-1, .cascading-block-2, .cascading-block-3 {
   font-size: 1.5rem !important;
@@ -354,10 +354,13 @@ formIds.forEach(id => {
 
 /* Mobile adjustments */
 @media (max-width: 767px) {
+  .cascading-block-1 { width: 88% !important; }
+  .cascading-block-2 { width: 94% !important; }
+  .cascading-block-3 { width: 100% !important; }
+  
   .cascading-block-1, .cascading-block-2, .cascading-block-3 {
-    max-width: 100% !important;
-    font-size: 1.2rem !important;
-    padding: 1rem !important;
+    font-size: 1.15rem !important;
+    padding: 1rem 0.5rem !important;
   }
   .blue-list-block.onboarding {
     padding-right: 3.5rem !important;
@@ -370,6 +373,7 @@ formIds.forEach(id => {
   .check-icon {
     width: 22px !important;
     height: 22px !important;
+    margin-left: 8px;
   }
 }
 </style>
