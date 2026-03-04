@@ -43,6 +43,9 @@
         </div>
         <p id="result-top" style="margin-top: 10px; display: none; color: white;"></p>
       </form>
+      <div style="text-align: center; margin-top: -5px; position: relative; z-index: 10;">
+        <div class="form-footer" style="padding: 0.5rem 1.5rem; border-radius: 0 0 12px 12px; font-weight: bold; background-color: #1f2937;">*יש לנו מקום לקבל רק 5 פגישות בשבוע</div>
+      </div>
     </div>
   </div>
 </section>
@@ -224,6 +227,45 @@
   </div>
 </section>
 
+<section class="light-gray-section">
+  <div class="container small">
+    <h2 class="text-center" style="margin-bottom: 2rem;">שאלות ותשובות נפוצות</h2>
+    <div class="faq-wrapper-2">
+      
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">למי מתאים השירות?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">השירות מתאים לבעלי עסקים שמרגישים שהם עובדים בשביל העסק ולא להפך, שיש להם מחזורים יפים אבל רוצים לעשות סדר אמיתי במספרים, לשלוט בתזרים, ולהתחיל לייצר רווחיות יציבה וקבועה שנשארת בכיס.</p>
+        </div>
+      </div>
+      
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">מה בדיוק קורה בפגישת האבחון?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">בפגישה אנחנו ממפים את המצב הפיננסי הנוכחי של העסק שלך, מזהים איפה ה"חורים" שדרכם הכסף נוזל, ומבינים יחד מה נדרש כדי לבנות אסטרטגיה כלכלית מנצחת שתקדם אותך ליעדים העסקיים שלך.</p>
+        </div>
+      </div>
+      
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">האם זה תחליף לרואה החשבון שלי?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">ממש לא. רואה החשבון שלך מתעסק בדיווחים לרשויות ובמידע היסטורי. אני, כיועץ פיננסי, עובד איתך (וביחד עם רואה החשבון) על ההווה והעתיד של העסק – תמחור נכון, ניהול תזרים המזומנים, אסטרטגיית צמיחה וניהול פיננסי יומיומי.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="Cta" class="half-dark-section">
   <div class="container text-center">
     <div class="form-block w-form">
@@ -238,6 +280,9 @@
         </div>
         <p id="result-bottom" style="margin-top: 10px; display: none; color: white;"></p>
       </form>
+      <div style="text-align: center; margin-top: -5px; position: relative; z-index: 10;">
+        <div class="form-footer" style="padding: 0.5rem 1.5rem; border-radius: 0 0 12px 12px; font-weight: bold; background-color: #1f2937;">*יש לנו מקום לקבל רק 5 פגישות בשבוע</div>
+      </div>
     </div>
   </div>
 </section>
@@ -252,6 +297,20 @@
 </section>
 
 <script>
+// פונקציה לפתיחה וסגירה של השאלות והתשובות
+function toggleFaq(element) {
+  const answer = element.querySelector('.faq-answer-wrapper');
+  const arrow = element.querySelector('.faq-arrow-icon-2');
+  
+  if (answer.style.display === 'none') {
+    answer.style.display = 'block';
+    arrow.style.transform = 'rotate(180deg)';
+  } else {
+    answer.style.display = 'none';
+    arrow.style.transform = 'rotate(0deg)';
+  }
+}
+
 const formIds = ['Lead-Form-Top', 'Lead-Form'];
 
 formIds.forEach(id => {
