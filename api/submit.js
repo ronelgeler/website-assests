@@ -20,7 +20,7 @@ module.exports = async function handler(req, res) {
   const brevoData = {
     sender: { 
       name: "האתר שלי", 
-      email: "noreply@ronelgeler.site" 
+      email: "ronelgeler@gmail.com" 
     },
     to: [{ 
       email: "ronelgeler@gmail.com", 
