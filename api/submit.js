@@ -1,10 +1,10 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
-  // Ensure body is parsed (Vercel sometimes passes it as a string depending on headers)
+  // Ensure body is parsed properly
   let body = req.body;
   if (typeof body === 'string') {
     try {
@@ -39,7 +39,6 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'accept': 'application/json',
-        // This pulls your key SECURELY from Vercel's Environment Variables
         'api-key': process.env.BREVO_API_KEY || '', 
         'content-type': 'application/json'
       },
