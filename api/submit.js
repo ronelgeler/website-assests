@@ -63,7 +63,7 @@ module.exports = async function handler(req, res) {
 
   // 2. שליחת האירוע לפייסבוק פיקסל (Conversions API)
   // מומלץ להעביר את ה-Pixel ID וה-Token למשתני סביבה ב-Vercel!
-  const PIXEL_ID = process.env.FB_PIXEL_ID || 'הכנס_את_מזהה_הפיקסל_שלך_כאן'; 
+  const PIXEL_ID = process.env.FB_PIXEL_ID || '3843866865916899'; 
   const FB_TOKEN = process.env.FB_ACCESS_TOKEN || 'EAAUvFuURnkEBQ9FhZA8vPjp6i5xfrGYGV5WGdzZBacdnoOyEVLS5vpNH6k7ZCZAtPMGd7gPMyPBo8qObUOqhRvUQUYN1Xm6f2xxcQzbSi7KTKIcrCuXY87pv4R8QZBHL39QNsKZBVOYK82IkxLlhX5iyWuZABWZCzfCd9mZAgdobi98AXdMaS3gDv1ibk5NlsBwZDZD';
 
   const currentTime = Math.floor(Date.now() / 1000);
