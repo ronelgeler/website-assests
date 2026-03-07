@@ -16,6 +16,11 @@ module.exports = async function handler(req, res) {
 
   const { Name, Phone } = body || {};
 
+  // Server-side validation to prevent empty submissions
+  if (!Name || !Phone) {
+    return res.status(400).json({ error: 'Name and Phone are required.' });
+  }
+
   // Format the request for Brevo
   const brevoData = {
     sender: { 
@@ -29,8 +34,8 @@ module.exports = async function handler(req, res) {
     subject: "קיבלת פנייה חדשה מבעל עסק!",
     htmlContent: `
       <h2 dir="rtl">ליד חדש מהאתר:</h2>
-      <p dir="rtl"><strong>שם:</strong> ${Name || 'לא הוזן'}</p>
-      <p dir="rtl"><strong>טלפון:</strong> ${Phone || 'לא הוזן'}</p>
+      <p dir="rtl"><strong>שם:</strong> ${Name}</p>
+      <p dir="rtl"><strong>טלפון:</strong> ${Phone}</p>
     `
   };
 
