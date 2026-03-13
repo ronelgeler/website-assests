@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": "npm install",
+  "routes": [
+    {
+      "src": "/api/submit",
+      "dest": "/api/submit.js"
+    }
+  ]
+}
