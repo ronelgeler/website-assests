@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>מחשבון נקודת איזון | רונאל גלר - שליטה פיננסית לבעלי עסקים</title>
+  <meta name="google-site-verification" content="es0qkdfjxd7Jq6Yic5VDwVpQ2k0VTZlR6g6B8rhYJvw" />
+  <meta content="מחשבון נקודת איזון לבעלי עסקים: המספר היחיד שאתם חייבים לדעת כשאתם קמים בבוקר. לחשב בכמה דקות ולהפסיק לנחש." name="description">
+  <meta name="keywords" content="רונאל גלר, יועץ פיננסי לבעלי עסקים, נקודת איזון, מחשבון נקודת איזון, ניהול תזרים מזומנים">
+  <meta name="author" content="רונאל גלר">
+  
+  <meta content="מחשבון נקודת איזון | רונאל גלר" property="og:title">
+  <meta content="מחשבון נקודת איזון לבעלי עסקים: המספר היחיד שאתם חייבים לדעת כשאתם קמים בבוקר. לחשב בכמה דקות ולהפסיק לנחש." property="og:description">
+  <meta content="website" property="og:type">
+  
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/favicon3.png?v=3">
+
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3843866865916899');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3843866865916899&ev=PageView&noscript=1"
+  /></noscript>
+  </head>
+<body class="body">
+
+<section class="hero-section" style="padding-top: 0;">
+  <div class="hero-background w-clearfix" style="height: auto; padding-bottom: 8rem;"></div>
+  <div class="container large" style="position: relative; z-index: 10; text-align: center;">
+    <div class="hero-topper" style="margin-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 2rem; border-bottom-left-radius: 2rem; display: inline-block; padding: 0.8rem 2rem; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">רונאל גלר | <strong>שליטה פיננסית לבעלי עסקים</strong></div>
+    
+    <div style="padding-top: 3rem; max-width: 900px; margin: 0 auto;">
+      <h1>נקודת האיזון בעסק:<br> <span class="bg-text-green">המספר היחיד שאתם חייבים לדעת</span> כשאתם קמים בבוקר</h1>
+      <p class="extra-big-text" style="color: rgba(255,255,255,0.9); margin-top: 1.5rem;">מחשבון מהיר שיגלה לכם בדיוק כמה העסק צריך להכניס בחודש רק כדי לשרוד (ומהרגע הזה – להתחיל להרוויח).</p>
+    </div>
+  </div>
+</section>
+
+<section class="light-gray-section calculator-section">
+  <div class="container small">
+    <div class="calculator-card" style="margin-top: -6rem;">
+      <h2 class="text-center" style="color: #2d2d2d; margin-bottom: 2rem;">מחשבון נקודת איזון (Break-Even)</h2>
+      
+      <div class="form-block">
+        <form id="calculator-form">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="fixedExpenses" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #2d2d2d;">1. סך הכל הוצאות קבועות לחודש (₪)</label>
+            <p style="font-size: 0.95rem; color: #666; margin-top: -0.2rem; margin-bottom: 0.5rem;">שכירות, ארנונה, משכורות עובדים קבועים, הלוואות, ביטוחים, שיווק קבוע וכו'. ההוצאות שיורדות גם אם לא מכרתם שקל.</p>
+            <input type="number" id="fixedExpenses" class="calc-input" placeholder="לדוגמה: 25000" required>
+          </div>
+          
+          <div style="margin-bottom: 2rem;">
+            <label for="grossMargin" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #2d2d2d;">2. אחוז רווח גולמי ממוצע (%)</label>
+            <p style="font-size: 0.95rem; color: #666; margin-top: -0.2rem; margin-bottom: 0.5rem;">כמה אחוז מכל מכירה נשאר לכם אחרי שהורדתם את העלות הישירה של המוצר/השירות? (סחורה, משלוח, חומרי גלם).</p>
+            <input type="number" id="grossMargin" class="calc-input" placeholder="לדוגמה: 40" min="1" max="100" required>
+          </div>
+
+          <button type="submit" class="calc-button">חשב עכשיו את המספר שלי</button>
+        </form>
+
+        <div id="calculator-result" class="result-box" style="display: none;">
+          <h3 style="margin-bottom: 0.5rem;">יעד מכירות מינימלי לחודש:</h3>
+          <div class="result-number" id="result-number">0 ₪</div>
+          <p class="result-warning">מתחת לסכום הזה העסק מפסיד כסף.<br><strong>כל שקל מעל המספר הזה הוא רווח אמיתי.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white-section">
+  <div class="container large">
+    <div class="pains-section-grid">
+      <div>
+        <h2>הנה איך מחשבים את זה ב-3 דקות ומפסיקים לנחש</h2>
+        <h3 class="red-text" style="font-size: 1.5rem; margin-top: 2rem;">01. תכירו את המפלצת: ההוצאות הקבועות</h3>
+        <p>אלה ההוצאות שקיימות גם אם ההכנסות שלכם יהיו 0 בחודש הקרוב. שכירות, ארנונה, מסים קבועים, ביטוחים, משכורות בסיס לעובדים (ולעצמכם!), הלוואות לעסק. תעשו רשימה של הכל ותחברו.</p>
+        
+        <h3 style="font-size: 1.5rem; margin-top: 2rem; color: var(--brand-green);">02. האשליה הנפוצה ביותר: "מכרתי ב-100, הרווחתי 100"</h3>
+        <p>כאן רוב העסקים נופלים. כשאתם מוכרים שירות או מוצר ב-100 ₪, כמה באמת נשאר לכם אחרי שהורדתם את העלות הישירה שלו? (חומרי גלם, סחורה, עלויות שילוח, אריזה, עמלת סליקה).</p>
+        <p>אם עלות המוצר שלכם היא 60 ₪, נשארו לכם 40 ₪. <strong class="yellow-marker">אחוז הרווח הגולמי שלכם הוא 40%.</strong></p>
+        
+        <h3 style="font-size: 1.5rem; margin-top: 2rem;">03. הנוסחה שתשנה לכם את החיים</h3>
+        <div class="blue-list-block" style="margin-top: 1rem; margin-bottom: 1rem; justify-content: flex-start; text-align: right;">
+          <div style="font-size: 1.5rem; font-weight: bold; width: 100%;">
+            הוצאות קבועות לחלק לרווח הגולמי (%) = נקודת האיזון
+          </div>
+        </div>
+        <p>זהו. המספר הזה הוא <strong>הקו האדום שלכם</strong>. עד שלא הגעתם אליו בחודש הנוכחי - אתם עובדים כדי לכסות עלויות. משם והלאה? כל שקל שנכנס הוא רווח אמיתי.</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="chart.png" alt="תרשים נקודת איזון ורווחים" class="pains-chart-image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section text-center">
+  <div class="container small">
+    <h2>אז מה עושים עם זה מחר בבוקר?</h2>
+    <div class="onboarding-steps-wrapper" style="margin-top: 3rem;">
+      <div class="blue-list-block onboarding" style="background-color: #374151 !important; justify-content: flex-start;">
+        <div class="onboarding-number">1</div>
+        <div><strong>מחשבים את המספר שלכם:</strong> השתמשו במחשבון למעלה. היו כנים עם עצמכם על כל ההוצאות.</div>
+      </div>
+      <div class="blue-list-block onboarding" style="background-color: #374151 !important; justify-content: flex-start;">
+        <div><strong>תולים את המספר מול העיניים:</strong> כולם בעסק צריכים לדעת מהו היעד המינימלי לחודש.</div>
+        <div class="onboarding-number">2</div>
+      </div>
+      <div class="blue-list-block onboarding" style="background-color: var(--brand-green) !important; justify-content: flex-start;">
+        <div><strong>בודקים כל יום:</strong> עוקבים אחרי המכירות אל מול היעד. לא מחכים לסוף החודש כדי לגלות שיש בעיה.</div>
+        <div class="onboarding-number">3</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Cta" class="half-dark-section">
+  <div class="container text-center">
+    <div class="form-block w-form">
+      <form id="Lead-Form-BreakEven" class="blue-form-wrapper">
+        <h2 class="form-header">מרגישים שאתם הולכים על חבל דק?</h2>
+        <p style="margin-bottom: 2rem; color: #f0fdf4;">אם גיליתם שנקודת האיזון שלכם גבוהה מדי, או שאתם פשוט לא מצליחים לעבור אותה ולהשאיר כסף בכיס – הגיע הזמן לעשות סדר במספרים.<br><br><strong>השאירו פרטים ונחזור אליכם לתיאום פגישת אסטרטגיה כלכלית בחינם 👇🏻</strong></p>
+        
+        <div class="form-grid">
+          <input class="round-text-field w-input" name="Name" placeholder="איך קוראים לך?" type="text" required aria-label="שם מלא">
+          <input class="round-text-field w-input" name="Phone" placeholder="מה המספר שלך?" type="tel" required aria-label="מספר טלפון">
+          <input type="submit" class="dark-round-button w-button" value="לתיאום פגישה בחינם" style="background-color: #1f2937 !important; color: #ffffff !important; border: none; height: 3rem;">
+        </div>
+        <div style="text-align: center; margin-top: 10px; font-size: 0.85rem; color: rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; gap: 5px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/></svg>
+          שליחת המידע מאובטחת ומוצפנת
+        </div>
+        <div style="text-align: right; margin-top: 15px; color: white; font-size: 0.95rem; line-height: 1.4;">
+          <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: normal;">
+            <input type="checkbox" name="Legal_Consent" required style="width: 18px; height: 18px; flex-shrink: 0; cursor: pointer;">
+            <span>אני מסכים/ה ל<a href="terms.html" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">תקנון האתר</a>.</span>
+          </label>
+          <div style="font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-top: 5px; margin-right: 28px;">*השארת הפרטים היא וולונטרית ואינה נובעת מחובה חוקית.</div>
+        </div>
+        <p id="result-breakeven" style="margin-top: 10px; display: none; color: white;"></p>
+      </form>
+      <div style="text-align: center; margin-top: -5px; position: relative; z-index: 10;">
+        <div class="form-footer" style="padding: 0.5rem 1.5rem; border-radius: 0 0 12px 12px; font-weight: bold; background-color: #1f2937;">*יש לנו מקום לקבל רק 5 פגישות בשבוע</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white-section footer">
+  <div class="container">
+    <div class="footer-text">
+      <a href="terms.html" class="footer-link">תקנון</a> | 
+      <a href="accessibility.html" class="footer-link">הצהרת נגישות</a>
+    </div>
+    <div class="guides-dropdown-wrapper">
+      <label for="guidesSelect" style="font-size: 0.9rem; font-weight: bold; color: #666;">מדריכים בעברית:</label>
+      <select id="guidesSelect" class="guides-select" onchange="if(this.value) window.location.href=this.value;">
+        <option value="">-- בחרו מדריך --</option>
+        <option value="index.html">דף הבית - שליטה פיננסית</option>
+        <option value="break-even.html">מחשבון נקודת איזון</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Calculator Logic
+  document.getElementById('calculator-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const fixedExpenses = parseFloat(document.getElementById('fixedExpenses').value);
+    const grossMargin = parseFloat(document.getElementById('grossMargin').value);
+    
+    if (isNaN(fixedExpenses) || isNaN(grossMargin) || grossMargin <= 0 || grossMargin > 100) {
+      alert('אנא הזינו ערכים תקינים.');
+      return;
+    }
+    
+    const breakEvenPoint = fixedExpenses / (grossMargin / 100);
+    const formattedResult = new Intl.NumberFormat('he-IL', { maximumFractionDigits: 0 }).format(breakEvenPoint) + ' ₪';
+    
+    document.getElementById('result-number').textContent = formattedResult;
+    document.getElementById('calculator-result').style.display = 'block';
+    document.getElementById('calculator-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  // Lead Form Submit Logic
+  const form = document.getElementById('Lead-Form-BreakEven');
+  const result = document.getElementById('result-breakeven');
+
+  form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      formData.append('Source', 'Break-Even Calculator'); // Track source
+      const json = JSON.stringify(Object.fromEntries(formData));
+
+      result.style.display = "block";
+      result.textContent = "שולח נתונים בבטחה...";
+
+      try {
+          const response = await fetch('/api/submit', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: json
+          });
+
+          if (response.ok) {
+              result.textContent = "הפרטים נשלחו בהצלחה! ניצור קשר בהקדם.";
+              form.reset();
+          } else {
+              result.textContent = "אירעה שגיאה בשרת. אנא נסה שנית או פנה אלינו בטלפון.";
+          }
+      } catch (error) {
+          result.textContent = "משהו השתבש. אנא וודא שאתה מחובר לאינטרנט ונסה שוב.";
+      } finally {
+          setTimeout(() => { result.style.display = "none"; }, 6000);
+      }
+  });
+</script>
+
+<script defer src="https://cdn.userway.org/widget.js" data-account="iaCLqsaGRU" data-position="5"></script>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>אנחנו משתמשים בעוגיות כדי לשפר את החוויה שלך ולנתח את התנועה באתר (כמו פייסבוק פיקסל). המשך הגלישה מהווה הסכמה לשימוש זה. <a href="terms.html">למידע נוסף</a></p>
+    <div class="cookie-buttons">
+      <button id="reject-cookies" class="cookie-button secondary">דחייה</button>
+      <button id="accept-cookies" class="cookie-button">מבין/ה</button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const banner = document.getElementById('cookie-banner');
+  if (!localStorage.getItem('cookies-accepted')) {
+    banner.style.display = 'block';
+  }
+  
+  const dismissBanner = () => {
+    localStorage.setItem('cookies-accepted', 'true');
+    banner.style.display = 'none';
+  };
+
+  document.getElementById('accept-cookies').addEventListener('click', dismissBanner);
+  document.getElementById('reject-cookies').addEventListener('click', dismissBanner);
+});
+</script>
+
+</body>
+</html>
