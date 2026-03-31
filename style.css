@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 /* HTML Resets & Base Elements */
 * { box-sizing: border-box; }
 html { height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: sans-serif; }
-body { margin: 0; min-height: 100%; direction: rtl; color: #0d0d0d; text-align: right; font-family: Ploni Aaa, sans-serif; font-size: 1.3rem; line-height: 1.4; background-color: #fff; }
+body { margin: 0; min-height: 100%; direction: rtl; color: #0d0d0d; text-align: right; font-family: 'Rubik', sans-serif; font-size: 1.3rem; line-height: 1.4; background-color: #fff; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 a { background-color: #0000; }
 a:active, a:hover { outline: 0; }
@@ -21,13 +23,7 @@ ul { margin-top: 0; margin-bottom: 10px; padding-left: 40px; }
 textarea { overflow: auto; resize: none; min-height: 5rem; }
 
 /* Fonts */
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d2222b7f5b59eb0a0176_ploni-bold-aaa.woff2") format("woff2"), url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d223f727e2c463da14ee_ploni-ultrabold-aaa.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d222c029e6ea15bc7431_ploni-demibold-aaa.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d223a7db41ea625487e0_ploni-regular-aaa.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d222f11380fa5b435ff2_ploni-black-aaa.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d2234595415ee1444198_ploni-light-aaa.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d22311ca933a573e475e_ploni-ultralight-aaa.woff2") format("woff2"); font-weight: 200; font-style: normal; font-display: swap; }
-@font-face { font-family: Ploni Aaa; src: url("https://cdn.prod.website-files.com/654bc6376837e19d25be369f/6557d222dfef6fc2503b1ce8_ploni-medium-aaa.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+/* Google Fonts Rubik imported at top of file */
 
 /* Variables */
 :root {
